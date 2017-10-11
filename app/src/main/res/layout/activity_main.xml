@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="guadarrama_jorge.appointmenthospital.MainActivity">
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Nombre_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_paciente"
+                android:inputType="text"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+               android:id="@+id/Edad_Paciente"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="@string/edad_paciente"
+               android:inputType="number"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Correo_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/correo_paciente"
+                android:inputType="textEmailAddress"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Telefono_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/telefono_paciente"
+                android:inputType="phone"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Direccion_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/direccion_paciente"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/imagen_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/imagen_paciente"
+                android:inputType=""
+                />
+
+            <ImageButton
+                android:id="@+id/imag_paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Padecimiento_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/padecimiento_paciente"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/FechaCita_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fcita_paciente"
+                android:inputType="date"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/HoraCita_Paciente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hcita_paciente"
+                android:inputType="time"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+            <EditText
+                android:id="@+id/Doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ndoc"
+                android:inputType=""
+                />
+
+            <TextView
+                android:id="@+id/targeturi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/Photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/toast"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="Toast"
+                android:text="@string/guardar"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

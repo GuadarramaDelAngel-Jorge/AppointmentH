@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppointmentHospital</string>
+    <string name="nombre_paciente">Nombre Paciente</string>
+    <string name="edad_paciente">Edad</string>
+    <string name="correo_paciente">Correo</string>
+    <string name="telefono_paciente">Telefono</string>
+    <string name="direccion_paciente">Direccion</string>
+    <string name="imagen_paciente">Imagen</string>
+    <string name="padecimiento_paciente">Padecimiento</string>
+    <string name="fcita_paciente">Fecha cita</string>
+    <string name="hcita_paciente">Hora cita</string>
+    <string name="ndoc">Doctor a cargo</string>
+    <string name="guardar">Guardar</string>
+</resources>
